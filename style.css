@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --background : #0f0e17;
+    --headline : #fffffe;
+    --paragraph: #a7a9be;
+    --button : #ff8906;
+    --button-txt : #fffffe;
+    
+    --stroke : black;
+    --main : #fffffe;
+    --highlight : #ff8906;
+    --secondary : #f25f4c; 
+    --tertiary : #e53170; 
+
+
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Roboto Slab', serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1500px;
+    margin: 30px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #e53170; */
+    font-family: 'Roboto Slab', serif;
+}
+
+nav .brand {
+    /* font-family: 'Foldit', cursive; */
+    /* font-family: 'Roboto Slab', serif; */
+    font-size: 35px;
+    color: var(--tertiary);
+    letter-spacing: 2px;
+    text-shadow: 0  0 6px var(--button);
+}
+
+nav ul {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--tertiary);
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #eaeaea;
+    color:  var(--tertiary);
+    padding: 5px 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 800px;
+    /* border: 1px solid white; */
+    align-items: center;
+    justify-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 23px;
+    /* position: relative; */
+    /* padding: 50px; */
+    padding-bottom: 195px;
+}
+
+main aside h1 {
+    font-size: 2em;
+    color: rgb(148, 14, 41);
+}
+
+main aside h2 {
+    font-size: 1.5em;
+    color: #eaeaea;
+    margin-bottom: 10px;
+}
+
+main aside p {
+    color:  white;
+    font-size: 0.8em;
+}
+
+main aside .media {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #eaeaea;
+}
+
+.icon {
+    margin-right: 100px;
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+    background-color: #ff8a0406;
+    box-shadow: 0 5px 10px black;
+    margin-left: 200px;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+}
+
+figure .image img {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    opacity: .8;
+}
+
+.container .main-second {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+            'header header'
+            'skill teks'
+            'skill teks';
+    /* border: 1px solid white; */
+    color: #eaeaea;
+    /* align-items: center; */
+    /* box-sizing: border-box; */
+    /* padding: 50px; */
+    /* box-sizing: border-box; */
+    /* transform: translate(2000px ,0); */
+}
+
+.main-second .header h1 {
+    letter-spacing: 3px;
+    color:  white;
+    grid-area: header;
+    text-align: center;
+    color: rgb(148, 14, 41);
+    /* border: 1px solid white; */
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.main-second .skill {
+    grid-area: skill;
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid #eaeaea;
+    margin-right: 100px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.main-second .skill h1 {
+    margin-bottom: 20px;
+    color: #eaeaea;
+    text-align: center;
+    font-size: 15px;
+}
+
+.main-second .teks {
+    grid-area: teks;
+    display: flex;
+    flex-direction: column;
+    align-items: flex;
+    /* justify-content: center; */
+}
+
+.main-second .teks p {
+    margin-bottom: 150px;
+    line-height: 25px;
+}
+
+.main-second .teks h1 {
+    color: rgb(148, 14, 41);
+    text-align: center  ;
+    margin-bottom: 20px;
+}
+
+/* TYPE ANIMATION */
+
+aside h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+.third-main {
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.third-main h1 {
+    text-align: center;
+    color: #eaeaea;
+    text-transform: uppercase;
+}
+
+.third-main .certificate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin-top: 50px;
+    row-gap: 30px;
+}
+
+
+.third-main .certificate img {
+    border-radius: 20px;
+    border: 5px dotted var(--button);
+}
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  /* RESPONSIVE BREAKPOINT */
+
+  @media screen and (max-width: 500px) {
+    .container {
+        width: 90%;;
+        margin: 30px auto;
+    }
+    
+    nav .brand {
+        width: 450px;
+        /* font-family: 'Foldit', cursive; */
+        /* font-family: 'Roboto Slab', serif; */
+        font-size: 23px;
+        color: var(--tertiary);
+        letter-spacing: 2px;
+        text-shadow: 0  0 6px var(--button);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+    }
+    
+    nav ul {
+        padding-top: 30px;
+        width: 450px;
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* position: absolute; */
+        display: none;
+    }
+
+    nav .humburger {
+
+    }
+
+    nav .hamburger span {
+        width: 40px;
+        height: 5px;
+        margin: 6px;
+        display: flex;
+        flex-direction: column;
+        background-color: #bebebe;
+    }
+
+    nav .hamburger #checkbox {
+        width: 40px;
+        height: 30px;
+        margin: 6px;
+        display: flex;
+        flex-direction: column;
+        background-color: #bebebe;
+        position: absolute;
+        top: 31px;
+        opacity: 0;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: var(--tertiary);
+    }
+    
+    nav ul li a:hover {
+        border-bottom: 2px solid #eaeaea;
+        color:  var(--tertiary);
+        padding: 5px 5px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        transition: 500ms;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: 430px;
+        grid-template-rows: 500px;
+        /* border: 1px solid white; */
+        align-items: center;
+        justify-items: center;
+        font-family: 'Roboto Slab', serif;
+        font-size: 13px;
+        /* position: relative; */
+        /* padding: 50px; */
+        padding-bottom: 0;
+    }
+    
+    main figure {
+        display: none;
+    }
+    main aside h1 {
+        text-align: center;
+        font-size: 2em;
+        color: rgb(148, 14, 41);
+    }
+    
+    main aside h2 {
+        text-align: center;
+        font-size: 1.5em;
+        color: #eaeaea;
+        margin-bottom: 10px;
+    }
+    
+    main aside p {
+        text-align: center;
+        color:  white;
+        font-size: 0.8em;
+    }
+    
+    main aside .media {
+        width: 300px;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 20px;
+        color: #eaeaea;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .icon {
+        margin-right: 20px;
+    }
+    
+    .image {
+        width: 400px;
+        height: 400px;
+        background-color: #ff8a0406;
+        box-shadow: 0 5px 10px black;
+        margin-left: 200px;
+        border-radius: 50%;
+        position: relative;
+        top: 50px;
+    }
+    
+    figure .image img {
+        position: absolute;
+        top: -200px;
+        left: 0;
+        opacity: .8;
+    }
+    
+    .container .main-second {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        grid-template-areas: 
+                'header header'
+                'skill skill'
+                'teks teks';
+        /* border: 1px solid white; */
+        /* color: #eaeaea; */
+        /* align-items: center; */
+        /* box-sizing: border-box; */
+        /* padding: 50px; */
+        /* box-sizing: border-box; */
+        /* transform: translate(2000px ,0); */
+    }
+    
+    .main-second .header h1 {
+        letter-spacing: 3px;
+        color:  white;
+        grid-area: header;
+        text-align: center;
+        color: rgb(148, 14, 41);
+        /* border: 1px solid white; */
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .main-second .skill {
+        grid-area: skill;
+        font-size: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: none;
+        margin-right: 100px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    
+    .main-second .skill h1 {
+        margin-bottom: 10px;
+        color: #eaeaea;
+        text-align: center;
+        font-size: 1px;
+    }
+
+    .skill .card img {
+        width: 200px;
+    }
+    
+    .main-second .teks {
+        grid-area: teks;
+        display: flex;
+        flex-direction: column;
+        align-items: flex;
+        /* justify-content: center; */
+    }
+    
+    .main-second .teks p {
+        margin-bottom: 50px;
+        line-height: 25px;
+    }
+    
+    .main-second .teks h1 {
+        color: rgb(148, 14, 41);
+        text-align: center  ;
+        margin-bottom: 20px;
+    }
+
+
+    
+    /* TYPE ANIMATION */
+    
+    aside h1 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 2s steps(40, end),
+          blink-caret .75s step-end infinite;
+      }
+      
+    .third-main {
+        height: 100vh;
+        margin-top: 100px;
+    }
+    
+    .third-main h1 {
+        text-align: center;
+        color: #eaeaea;
+        text-transform: uppercase;
+    }
+    
+    .third-main .certificate {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        margin-top: 50px;
+        padding-bottom: 50px;
+        row-gap: 30px;
+    }
+    
+    
+    .third-main .certificate img {
+        width: 350px;
+        border-radius: 20px;
+        border: 5px dotted var(--button);
+    }
+
+
+  }
