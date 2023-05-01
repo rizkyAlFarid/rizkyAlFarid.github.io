@@ -274,9 +274,6 @@ aside h1 {
         display: none;
     }
 
-    nav .humburger {
-
-    }
 
     nav .hamburger span {
         width: 40px;
@@ -315,8 +312,8 @@ aside h1 {
     
     main {
         display: grid;
-        grid-template-columns: 300px;
-        grid-template-rows: 500px;
+        grid-template-columns: 310px;
+        grid-template-rows: 600px;
         /* border: 1px solid white; */
         align-items: center;
         justify-items: center;
@@ -346,7 +343,7 @@ aside h1 {
     main aside p {
         text-align: center;
         color:  white;
-        font-size: 0.8em;
+        font-size: 1em;
     }
     
     main aside .media {
@@ -429,7 +426,7 @@ aside h1 {
     }
 
     .skill .card img {
-        width: 200px;
+        width: 130px;
     }
     
     .main-second .teks {
@@ -443,12 +440,14 @@ aside h1 {
     .main-second .teks p {
         margin-bottom: 50px;
         line-height: 25px;
+        font-size: 13px;
     }
     
     .main-second .teks h1 {
         color: rgb(148, 14, 41);
         text-align: center  ;
         margin-bottom: 20px;
+        font-size: 20px;
     }
 
 
@@ -475,6 +474,7 @@ aside h1 {
         text-align: center;
         color: #eaeaea;
         text-transform: uppercase;
+        font-size: 25px;
     }
     
     .third-main .certificate {
@@ -488,7 +488,7 @@ aside h1 {
     
     
     .third-main .certificate img {
-        width: 350px;
+        width: 270px;
         border-radius: 20px;
         border: 5px dotted var(--button);
     }
