@@ -312,7 +312,7 @@ aside h1 {
     
     main {
         display: grid;
-        grid-template-columns: 310px;
+        grid-template-columns: 320px;
         grid-template-rows: 600px;
         /* border: 1px solid white; */
         align-items: center;
