@@ -315,13 +315,13 @@ aside h1 {
     
     main {
         display: grid;
-        grid-template-columns: 430px;
+        grid-template-columns: 300px;
         grid-template-rows: 500px;
         /* border: 1px solid white; */
         align-items: center;
         justify-items: center;
         font-family: 'Roboto Slab', serif;
-        font-size: 13px;
+        font-size: 10px;
         /* position: relative; */
         /* padding: 50px; */
         padding-bottom: 0;
@@ -332,7 +332,7 @@ aside h1 {
     }
     main aside h1 {
         text-align: center;
-        font-size: 2em;
+        font-size: 2.3em;
         color: rgb(148, 14, 41);
     }
     
