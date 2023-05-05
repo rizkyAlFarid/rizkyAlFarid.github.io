@@ -48,6 +48,11 @@ nav .brand {
     text-shadow: 0  0 6px var(--button);
 }
 
+.brand .hamburger #checkbox {
+    display: none;
+
+}
+
 nav ul {
     width: 500px;
     display: flex;
@@ -96,7 +101,7 @@ main aside h2 {
 
 main aside p {
     color:  white;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 main aside .media {
