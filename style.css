@@ -50,7 +50,6 @@ nav .brand {
 
 .brand .hamburger #checkbox {
     display: none;
-
 }
 
 nav ul {
@@ -83,7 +82,7 @@ main {
     justify-items: center;
     font-family: 'Roboto Slab', serif;
     font-size: 23px;
-    /* position: relative; */
+    /* position: rselative; */
     /* padding: 50px; */
     padding-bottom: 195px;
 }
@@ -259,7 +258,7 @@ aside h1 {
         width: 450px;
         /* font-family: 'Foldit', cursive; */
         /* font-family: 'Roboto Slab', serif; */
-        font-size: 23px;
+        font-size: 15px;
         color: var(--tertiary);
         letter-spacing: 2px;
         text-shadow: 0  0 6px var(--button);
@@ -281,8 +280,8 @@ aside h1 {
 
 
     nav .hamburger span {
-        width: 40px;
-        height: 5px;
+        width: 35px;
+        height: 2px;
         margin: 6px;
         display: flex;
         flex-direction: column;
