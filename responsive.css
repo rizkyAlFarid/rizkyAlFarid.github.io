@@ -21,6 +21,24 @@
         height: 3px;
         margin: 7px;
         background-color: aliceblue;
+        transition: 300ms;
+    }
+
+    .hamburger-menu .satu {
+        transform-origin: 0;
+        transform: rotate(40deg);
+        transition: 300ms;
+    }
+
+    .hamburger-menu .dua {
+        scale: 0;
+        transition: 300ms;
+    }
+
+    .hamburger-menu .tiga {
+        transform-origin: 3px;
+        transform: rotate(-40deg);
+        transition: 300ms;
     }
 
     nav ul {
