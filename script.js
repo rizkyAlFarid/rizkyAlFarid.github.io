@@ -9,5 +9,7 @@ hamburger.addEventListener('click', function() {
     lineTop.classList.toggle('satu')
     lineCenter.classList.toggle('dua')
     lineBottom.classList.toggle('tiga')
-})
+});
+
+
 
