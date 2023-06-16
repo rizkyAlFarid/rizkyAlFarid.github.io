@@ -35,9 +35,13 @@
     src: url('font/Alatsi-Regular.ttf');
 }
 
+.text-center {
+    text-align: center;
+}
+
 .first-container {
     width: 100%;
-    height: 100vh;
+    height: 250vh;
     background-color: #0f0e17;
 }
 
@@ -166,6 +170,39 @@ main .home {
     object-position: -25px -90px;
 }
 
+.about-me {
+    font-size: 18px;
+    height: 90vh;
+    /* border: 1px solid white; */
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me .title {
+    font-family: 'ubuntu-b', Arial, Helvetica, sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 40px;
+    background: -webkit-linear-gradient(#ff8800, #f25f4c, #ff397e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-me .para {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--button-txt);
+}
+
+.para p:first-child {
+    align-self: center;
+}
+
 @keyframes ngambang {
     from {
         transform: translateY(0);
@@ -175,4 +212,6 @@ main .home {
         transform: translateY(-10px);
     }
 }
+
+
 

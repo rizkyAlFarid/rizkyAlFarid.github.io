@@ -1,6 +1,6 @@
 @media screen and (max-width : 800px) {
     .first-container {
-        height: 115vh;
+        height: 300vh;
     }
     nav {
         position: relative;
@@ -91,5 +91,14 @@
     .side-right .image img { 
         width: 300px;
         object-position: -40px -80px;
+    }
+
+    .about-me {
+        height: 130vh;
+    }
+
+    .about-me .para {
+        display: flex;
+        flex-direction: column;
     }
 }
