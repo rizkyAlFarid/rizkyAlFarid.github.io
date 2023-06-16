@@ -94,7 +94,8 @@
     }
 
     .about-me {
-        height: 130vh;
+        height: 100vh;
+        margin-top: 200px;
     }
 
     .about-me .para {
