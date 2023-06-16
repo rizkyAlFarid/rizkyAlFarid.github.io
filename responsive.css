@@ -1,6 +1,6 @@
 @media screen and (max-width : 800px) {
     .first-container {
-        height: 113vh;
+        height: 115vh;
     }
     nav {
         position: relative;
@@ -73,7 +73,7 @@
     .home .side-left {
         order: 1;
         margin-top: 30px;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .side-left .social-media {
