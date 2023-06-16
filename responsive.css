@@ -1,10 +1,12 @@
 @media screen and (max-width : 800px) {
     .first-container {
-        height: 300vh;
+        height: 430vh;
     }
     nav {
-        position: relative;
+        position: fixed;
         z-index: 1;
+        left: 0;
+        right: 0;
     }
 
     nav .brand {
@@ -85,7 +87,7 @@
     .home .side-right .image{
         width: 200px;
         height: 200px;
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
     .side-right .image img { 
@@ -95,11 +97,27 @@
 
     .about-me {
         height: 100vh;
-        margin-top: 200px;
+        margin-top: 120px;
     }
 
     .about-me .para {
         display: flex;
         flex-direction: column;
+    }
+
+    .education {
+        width: 90%;
+        /* border: 1px solid white; */
+    }
+
+    .education h1 {
+        padding-top: 700px;
+        /* padding-bottom: 300; */
+    }
+
+    .main-education {
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 900px; */
     }
 }

@@ -11,5 +11,10 @@ hamburger.addEventListener('click', function() {
     lineBottom.classList.toggle('tiga')
 });
 
+document.addEventListener('scroll', function() {
+    const navbar = document.querySelector('#navbar');
+    navbar.style.backgroundColor = '#0f0e179d';
+})
 
+  
 

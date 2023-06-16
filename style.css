@@ -41,7 +41,7 @@
 
 .first-container {
     width: 100%;
-    height: 250vh;
+    height: 300vh;
     background-color: #0f0e17;
 }
 
@@ -57,6 +57,10 @@
     /* box-sizing: border-box; */
     padding-top: 20px;
     /* padding-bottom: 20px; */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
 }
 
 nav .brand {
@@ -106,7 +110,7 @@ main .home {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
-    height: 80vh;
+    height: 100vh;
 }
 
 .home .side-left {
@@ -172,13 +176,15 @@ main .home {
 
 .about-me {
     font-size: 18px;
-    height: 90vh;
+    height: 50vh;
     /* border: 1px solid white; */
-    margin-top: 80px;
+    /* margin-top: 80px; */
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .about-me .title {
@@ -202,6 +208,104 @@ main .home {
 .para p:first-child {
     align-self: center;
 }
+
+.education {
+    width: 900px;
+    margin: auto;
+    margin-top: 100px;
+    /* border: 1px solid white; */
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 190px;
+}
+
+.education h1 {
+    font-family: 'ubuntu-b', Arial, Helvetica, sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: -webkit-linear-gradient(#ff8800, #f25f4c, #ff397e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 100px;
+}
+
+.main-education {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* card */
+.card {
+    position: relative;
+    width: 190px;
+    height: 254px;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+  }
+  
+  .card::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    border-radius: 1.2em;
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    filter: blur(30px);
+  }
+  
+  .card span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    border-radius: 1em;
+  }
+  
+  .card span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .card .content {
+    position: relative;
+    /* padding: 10px; */
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.3em;
+    font-family: 'ubuntu-b';
+    text-align: center;
+  }
+/* card close */
 
 @keyframes ngambang {
     from {
