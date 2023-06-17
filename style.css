@@ -35,13 +35,18 @@
     src: url('font/Alatsi-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Arcon';
+    src: url('font/Arcon-Regular.otf');
+}
+
 .text-center {
     text-align: center;
 }
 
 .first-container {
     width: 100%;
-    height: 300vh;
+    height: 420vh;
     background-color: #0f0e17;
 }
 
@@ -135,7 +140,7 @@ main .home {
 .side-left p { 
     margin-top: 10px;
     line-height: 28px;
-    font-family: 'ubuntu', Arial, Helvetica, sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Arcon', sans-serif, Arial, Helvetica, sans-serif;
 }
 
 .side-left .social-media {
@@ -201,7 +206,7 @@ main .home {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arcon', Arial, Helvetica, sans-serif;
     color: var(--button-txt);
 }
 
@@ -302,8 +307,29 @@ main .home {
     justify-content: center;
     font-weight: 800;
     font-size: 1.3em;
-    font-family: 'ubuntu-b';
+    font-family: 'Arcon', Arial, Helvetica, sans-serif;
     text-align: center;
+  }
+
+  .certificate {
+    /* border: 1px solid white; */
+    margin-top: 100px;
+  }
+
+  .certificate h1 {
+    font-family: 'ubuntu-b', Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background: -webkit-linear-gradient(#ff8800, #f25f4c, #ff397e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .certificate .main-certificate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 /* card close */
 
